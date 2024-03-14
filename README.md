@@ -53,10 +53,10 @@
    hide cartoon
    show clu_7soy_1 cartoon
    ```
-4. Visualized examples from ChimeraX 
-   show_cluster 
+4. Visualized examples from ChimeraX<br>
+   show_cluste<br>
    <img src = ./image/showcluster.png width=50% height=50%>   
-   show clu_7soy_1 cartoon 
+   show clu_7soy_1 cartoon<br>
    <img src = ./image/showcluster2.png width=50% height=50%>   
-   superpose_complex 
+   superpose_complex<br>
    <img src = ./image/superpose_complex.png width=50% height=50%>   
