@@ -54,7 +54,7 @@
    show clu_7soy_1 cartoon
    ```
 4. Visualized examples from ChimeraX<br>
-   show_cluste<br>
+   show_cluster<br>
    <img src = ./image/showcluster.png width=50% height=50%>   
    show clu_7soy_1 cartoon<br>
    <img src = ./image/showcluster2.png width=50% height=50%>   
