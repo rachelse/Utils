@@ -1,5 +1,10 @@
 # Utility
 - Author: Rachel Seongeun Kim
+- Table of Contents
+  1. [Tutorial](#tutorials)
+  2. [ChimeraX Functions](#ChimeraX)
+     1. [Foldseek Complex](#functions-specialized-for-foldseek-complex)
+
 --- 
 
 ## Tutorials
