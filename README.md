@@ -27,31 +27,36 @@
 2. Features
    - cluster alias : use the cluster as a unit e.g. show specific cluster (clu_repname)
 
+3. How to use
+   ```sh
+   open visualize_foldseek_complex.py
 
-```sh
-## How to use
-----------
-open visualize_foldseek_complex.py
+   # 1. rotate_translate
+   open query.pdb
+   open target.pdb
+   rotate_translate #2 0.001,0.002,0.003,0.004,0.005,0.006,0.007,0.008,0.009,100,200,300
 
-# 1. rotate_translate
-open query.pdb
-open target.pdb
-rotate_translate #2 0.001,0.002,0.003,0.004,0.005,0.006,0.007,0.008,0.009,100,200,300
+   # 2. superpose_complex
+   superpose_complex /path/to/scorecomplex_report query,target pdb_path /path/to/pdb_dir qt_id 1,2
 
-# 2. superpose_complex
-superpose_complex /path/to/scorecomplex_report query,target pdb_path /path/to/pdb_dir qt_id 1,2
+   # 3. show_cluster
+   show_cluster /path/to/scorecomplex_report /path/to/complexcluster_result pdb_path /path/to/pdb
 
-# 3. show_cluster
-show_cluster /path/to/scorecomplex_report /path/to/complexcluster_result pdb_path /path/to/pdb
+   # 4. print functions
+   print_tmscore /path/to/scorecomplex_report query,target
+   print_ut /path/to/scorecomplex_report query,target
+   print_report /path/to/scorecomplex_report query,target
 
-# 4. print functions
-print_tmscore /path/to/scorecomplex_report query,target
-print_ut /path/to/scorecomplex_report query,target
-print_report /path/to/scorecomplex_report query,target
-
-## Additional information
-----------
-# 1. cluster alias e.g. clu_7soy_1
-hide cartoon
-show clu_7soy_1 cartoon
-```
+   ----------
+   ## Additional information
+   # 1. cluster alias e.g. clu_7soy_1
+   hide cartoon
+   show clu_7soy_1 cartoon
+   ```
+4. Visualized examples from ChimeraX
+   show_cluster
+   <img src = ./image/showcluster.png width=50% height=50%>
+   show clu_7soy_1 cartoon
+   <img src = ./image/showcluster2.png width=50% height=50%>
+   superpose_complex
+   <img src = ./image/superpose_complex.png width=50% height=50%>
