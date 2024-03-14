@@ -13,8 +13,8 @@
 
 ## ChimeraX
 ### Functions specialized for Foldseek Complex
- > Helper functions to visualize the result of complexsearch and complexcluster
- [source code](./chimerax/visualize_foldseek_complex.py)
+ > Helper functions to visualize the result of complexsearch and complexcluster 
+ [source code](./chimerax/visualize_foldseek_complex.py)   
  [example data](./chimerax/data/)
 1. Functions
    - rotate_translate : rotate and translate the complex by providing the ut matrix
@@ -53,10 +53,10 @@
    hide cartoon
    show clu_7soy_1 cartoon
    ```
-4. Visualized examples from ChimeraX
-   show_cluster
-   <img src = ./image/showcluster.png width=50% height=50%>
-   show clu_7soy_1 cartoon
-   <img src = ./image/showcluster2.png width=50% height=50%>
-   superpose_complex
-   <img src = ./image/superpose_complex.png width=50% height=50%>
+4. Visualized examples from ChimeraX 
+   show_cluster 
+   <img src = ./image/showcluster.png width=50% height=50%>   
+   show clu_7soy_1 cartoon 
+   <img src = ./image/showcluster2.png width=50% height=50%>   
+   superpose_complex 
+   <img src = ./image/superpose_complex.png width=50% height=50%>   
