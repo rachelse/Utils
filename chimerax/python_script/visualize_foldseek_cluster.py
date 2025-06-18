@@ -12,8 +12,12 @@ How to use
 ----------
 open visualize_foldseek_cluster.py
 
-# 3. show the cluster
+# 1. show the cluster
 show_cluster </path/to/cluster_result_file> </path/to/cluster_report_file> pdb_path </path/to/pdb>
+
+# 2. apply rotate and translate with superposition matrix
+rotate_translate <model identifier> <u,t matrix>
+e.g. rotate_translate #2 -0.542,0.828,-0.138,-0.822,-0.557,-0.115,-0.172,0.050,0.983,128.937,343.236,-8.978
 
 ----------------------
 Additional Information
