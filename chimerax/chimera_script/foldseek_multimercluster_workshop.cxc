@@ -1,0 +1,40 @@
+#
+# File: foldseek_multimercluster_workshop.cxc
+# Project: chimera_script
+# File Created: 18th Jun 2025
+# Author: Rachel Seongeun Kim (seamustard52@gmail.com)
+# -----
+# Copyright: Rachel Seongeun Kim
+#
+
+## To run this script, enter following command in chimeraX:
+# open ~/Desktop/lab/util/chimerax/chimera_script/foldseek_multimercluster_workshop.cxc
+
+## 0. You need to register the commands with the following file
+open ~/Desktop/lab/util/chimerax/python_script/visualize_foldseek_cluster.py
+cd ~/Desktop/tmp
+
+### 1. Show the clustering result from Foldseek multimercluster result files
+### Input:
+##    - cluster file: *_cluster.tsv (e.g.: workshop_cluster_2x.tsv)
+##    - report file: *_cluster_report (e.g.: workshop_cluster_report)
+##    - Directory with pdb files: <PATH_TO_DIR> (e.g.: pdbdir)
+#
+#show_cluster workshop_cluster_2x.tsv workshop_cluster_report pdb_path pdbdir
+#
+### 1-1. Additionally, you can use the following commands to highlight specific cluster:
+#hide cartoon
+#show clu_2c9w-IF956 cartoon
+#
+### 1-2. You can do this with single command without chimeraX script: 
+#cd ~/Desktop/tmp
+#runscript ~/Desktop/lab/util/chimerax/python_script/visualize_foldseek_cluster.py show_cluster workshop_cluster_2x.tsv workshop_cluster_report pdb_path pdbdir
+#
+### 2. Superpose specific complex structure with u,t matrix
+## Query: 1ofi-IF9        
+## Target: 1g3i-IF0
+## u,t matrix: 9 floats for U, 3 floats for T
+#
+open pdbdir/1ofi-IF9.pdb
+open pdbdir/1g3i-IF0.pdb
+rotate_translate #2 -0.542,0.828,-0.138,-0.822,-0.557,-0.115,-0.172,0.050,0.983,128.937,343.236,-8.978

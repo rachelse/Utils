@@ -1,0 +1,52 @@
+#File: APBJC2024.cxc
+#Project: chimera_script
+#File Created: 13th Oct 2024
+#Author: Rachel Seongeun Kim (seamustard52@gmail.com)
+#-----
+#Copyright: Rachel Seongeun Kim
+
+open /Users/steineggerlab/Desktop/lab/util/chimerax/python_script/visualize_foldseek_cluster.py
+
+#### C80
+show_cluster /Users/steineggerlab/Desktop/bu/conformation/bu_clust_c80_7z6h.tsv /Users/steineggerlab/Desktop/bu/conformation/bu_clust_c80_7z6h_report pdb_path /Users/steineggerlab/Desktop/bu/conformation
+transparency #1-14,16-end 70 cartoon
+## RFC
+color #15/D,E,F,G,K #BD632F
+## RAD
+color #15/A,B,C #2F66BC
+
+
+
+### C80_tm80_ctm80
+#show_cluster /Users/steineggerlab/Desktop/bu/conformation/bu_clust_ctm80_7z6h.tsv /Users/steineggerlab/Desktop/bu/conformation/bu_clust_ctm80_7z6h_report pdb_path /Users/steineggerlab/Desktop/bu/conformation
+#mm 15 to #3
+#mm #7 to #5
+### RFC
+#color #1,2,3,5,14/A,B,C,D,E #BD632F
+### 7,9-A : RAD, 15-K :RAD
+#color #7,9/A,B,C,D,E #BD632F
+#color #15/D,E,F,G,K #BD632F
+#
+### PCNA RAD ?(MEC,DDC,HUS)
+#color #1,2,3,5,14/F,G,H #2F66BC
+#color #15/A,B,C #2F66BC
+#color #7,9/F,G,H #2F66BC
+## Color opened state: #E9A8BE
+#color #1,2,3,9/F,G,H #E9A8BE
+## Color intermediate state: #63666A
+#color #14/F,G,H #63666A
+#
+### RAD
+##color #7,9/A,G #E9A8BE
+##color #15/A,B #E9A8BE
+##color #15/A,B,K #E9A8BE
+### ?
+##color #15/A,B,C #2F66BC
+##color #7,9/F,G,H #2F66BC
+##color #15/C #63666A
+##color #7,9/F,H #63666A
+#
+#transparency #4,6,8,10-13,16 70 cartoon
+
+hide nucleic
+hide nucleic cartoon
